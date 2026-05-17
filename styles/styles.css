@@ -1,0 +1,984 @@
+@font-face{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-regular.ttf") format("woff2");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-bold.ttf") format("woff2");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-regular-italic.ttf") format("woff2");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-bold-italic.ttf") format("woff2");
+  font-display: swap;
+}
+
+/* PT Sans Narrow */
+@font-face{
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-narrow-bold.ttf") format("woff2");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-narrow-regular.ttf") format("woff2");
+  font-display: swap;
+}
+
+/* ! General-parameters */
+html{
+  height: 100%;
+}
+
+body{
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #242424;
+  background-color: #fbf7f4;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 1020px;
+  min-height: 100%;
+}
+
+.visually-hidden{
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+.title-hide{
+  margin: 0;
+  padding: 0;
+}
+
+.button{
+  color: #fff;
+  background-color: #000;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+::placeholder{
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color:  #BDBDBD;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]{
+  appearance: textfield;
+}
+
+/* ! Header */
+
+.page-header{
+  background-color: #000;
+}
+
+.navigation{
+  margin: 0 auto;
+  max-width: 1020px;
+  min-width: 1020px;
+}
+
+.navigation-container{
+  padding: 0 40px;
+  display: flex;
+}
+
+.navigation-list{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.navigation-link{
+  color: #fff;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 24px 20px;
+  display: flex;
+}
+
+.navigation-link:hover{
+  background-color: #595959;
+}
+
+.navigation-link:focus{
+  outline: none;
+  box-shadow: inset 0 0 0 4px #e7e7e7;
+}
+
+.navigation-icons{
+  margin-left: auto;
+}
+
+.navigation-icons .navigation-link{
+  padding-top: 27px;
+}
+
+.navigation-link-text-entry{
+  margin-top: -3px;
+  margin-left: 8px;
+}
+
+.navigation-icon-link{
+  fill: #BDBDBD;
+}
+
+.navigation-link:hover .navigation-icon-link{
+  fill: #242424;
+}
+
+.navigation-link:hover .navigation-entry-icon{
+  fill: #fff;
+}
+
+.navigation-link:focus .navigation-entry-icon{
+  fill: #fff;
+}
+
+/* ! Main-index */
+.main-index{
+  color: #fff;
+  background-color: #000;
+  background-image: url(../img/bg/index-bg.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-grow: 1;
+}
+
+.main-container{
+  max-width: 1020px;
+  min-width: 1020px;
+  margin: 0 auto;
+}
+
+.title-on-bg{
+  display: block;
+  margin: 0 auto;
+}
+
+.advantages-list{
+  padding: 0;
+  margin: 64px 40px 58px ;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 277px);
+  gap: 54.5px;
+  max-width: 940px;
+  min-width: 940px;
+  box-sizing: border-box;
+}
+
+.advantages-item{
+  text-align: center;
+  max-width: 277px;
+  min-width: 277px;
+}
+
+.advantages-title{
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 35.2px;
+  text-transform: uppercase;
+  margin-bottom: 56px;
+}
+
+.advantages-description{
+  margin: 0;
+  position: relative;
+}
+
+.advantages-description::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -36px;
+  left: 0;
+  right: 0;
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.index-columns{
+  background-color: #FBF7F4;
+  background-image: url(../img/bg/white-bg.png);
+  color: #242424;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  display: flex;
+  max-width: 940px;
+  margin: 0 40px 31px;
+  padding: 40px;
+}
+
+.index-columns:last-of-type{
+  margin-bottom: 61px;
+}
+
+.popular-services{
+  max-width: 390px;
+  min-width: 390px;
+}
+
+.index-columns-title{
+  font-size: 32px;
+  line-height: 35px;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+.popular-services-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popular-services-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  align-items: baseline;
+}
+
+.popular-services-item:last-of-type{
+margin-bottom: 30px;
+}
+
+.popular-services-item::before{
+  content: "";
+  flex-grow: 1;
+  order: 2;
+  border-bottom: 2px dotted rgba(89, 89, 89, 0.5);
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.popular-services-price{
+  color: #AF7842;
+  margin-left: auto;
+  order: 3;
+}
+
+.button-see-all{
+  min-width: 192px;
+  max-width: 192px;
+  text-align: start;
+  background-image: url(../img/logo-icon/mark-right.svg);
+  background-repeat: no-repeat;
+  background-position: right 24px top 15px;
+}
+
+.main-contacts-subtitle{
+  color: #AF7842;
+}
+
+.photo-gallery{
+  margin-left: auto;
+}
+
+.photo-gallery-title{
+  margin-bottom: 20px;
+}
+
+.slider-wrapper{
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.slider-button{
+  position: absolute;
+  background-color: #000;
+  background-image: url(../img/logo-icon/mark-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 60px;
+  min-width: 48px;
+  border: none;
+  right: 0;
+  top: 91px;
+  cursor: pointer;
+}
+
+.slider-button-prev{
+  transform: rotate(180deg);
+  left: 0;
+  max-width: 48px;
+}
+
+.slider-division-list{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 8px);
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.slider-division-button{
+  border: none;
+  padding: 0;
+  min-width: 8px;
+  min-height: 8px;
+  background-color: #BDBDBD;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-division-button-current{
+  background-color: #000;
+}
+
+.main-contacts-subtitle{
+  margin-bottom: 8px;
+}
+
+.main-contacts-description{
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.address{
+  font-style: normal;
+}
+
+.main-contacts-phone{
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #242424;
+  display: inline-block;
+  margin-bottom: 22px;
+}
+
+.schedule-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-item{
+  margin: 0;
+}
+
+.schedule-item:last-of-type{
+  margin-bottom: 21px;
+}
+
+.button-feedback{
+  color: #242424;
+  background-color: #fff;
+  margin-left: 16px;
+}
+
+.appointment-text{
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: #595959;
+  text-transform: none;
+}
+
+.appointment-container{
+  display: inline-block;
+  margin-left: 17px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+
+.appointment-container-date{
+  margin-left: 0;
+}
+
+.appointment-container-name{
+  margin-left: 0;
+}
+
+.appointment-wrapper{
+  margin: 0;
+}
+
+.appointment-input{
+  margin: 0;
+  padding: 8px 14px;
+  box-sizing: border-box;
+  border: 2px solid #242424;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.appointment-input-date{
+  max-width: 114px;
+  min-width: 114px;
+}
+
+.appointment-input-time{
+  max-width: 74px;
+  min-width: 74px;
+}
+
+.appointment-input-phone{
+  max-width: 208px;
+  min-width: 208px;
+}
+
+.appointment-container-name{
+  display: block;
+}
+
+.appointment-input-name{
+  max-width: 430px;
+  min-width: 430px;
+}
+
+.appointment-label{
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-right: 2px;
+}
+
+.appointment-submit{
+  border: none;
+  padding: 14px 19px;
+  cursor: pointer;
+}
+
+/* ! Footer */
+.footer{
+  color: #fff;
+  background-color: #242424;
+  background-image: url(../img/bg/footer-bg.png);
+  background-repeat: repeat;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.footer-container{
+  min-width: 1020px;
+  max-width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.footer-contacts{
+  min-width: 187px;
+  max-width: 187px;
+}
+
+.footer-logo-borodinski{
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.address-text{
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19.6px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.footer-phone{
+  color: #FFFFFF;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.how-find{
+  color: #fff;
+  line-height: 26px;
+}
+
+.footer-appointment{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-input{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-appointment-title{
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.footer-input-email{
+  margin: 0;
+  padding: 8px 16px;
+  text-align: center;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  line-height: 24px;
+  min-width: 223px;
+  max-width: 223px;
+}
+
+.submit-email{
+  min-width: 56px;
+  min-height: 44px;
+  background-image: url(../img/logo-icon/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-social{
+  min-width: 184px;
+  max-width: 184px;
+}
+
+.footer-social-title{
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.footer-social-list{
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 56px);
+  gap: 8px;
+}
+
+.footer-social-link{
+  background-color: #000;
+  min-width: 54px;
+  min-height: 44px;
+  display: inline-block;
+}
+
+.footer-social-twitter{
+  background-image: url(../img/logo-icon/logo-twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.footer-social-vk{
+  background-image: url(../img/logo-icon/logo-vk.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-social-instagram{
+  background-image: url(../img/logo-icon/logo-instagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.create-in{
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.htmlacademy-link{
+  color: #DBB590;
+}
+
+/* ! Catalog page */
+.main-catalog{
+  color: #242424;
+  background-color: #FBF7F4;
+  background-image: url(../img/bg/white-bg.png);
+  display: flex;
+  flex-grow: 1;
+}
+
+.catalog-container{
+  margin: 0 auto;
+  max-width: 1020px;
+  min-width: 1020px;
+  font-weight: 700;
+}
+
+.catalog-subcontainer{
+  padding: 0 40px 60px;
+  display: flex;
+  max-width: 1020px;
+  min-width: 1020px;
+  box-sizing: border-box;
+}
+
+.inner-header{
+  min-width: 1020px;
+  max-width: 1020px;
+  box-sizing: border-box;
+  padding: 40px;
+  padding-bottom: 32px;
+}
+
+.inner-header-title{
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 32px;
+  line-height: 35.2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.breadcrumbs-list{
+  list-style-type: none;
+  line-height: 22.4px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.breadcrumbs-link{
+  color: #242424;
+  margin-right: 32px;
+}
+
+.breadcrumbs-link-catalog{
+  color: #595959;
+  text-decoration: none;
+  position: relative;
+}
+
+.breadcrumbs-link-catalog::before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  min-width: 8.5px;
+  min-height: 8.5px;
+  max-width: 12px;
+  max-height: 12px;
+  background: #242424;
+  transform: rotate(45deg);
+  border: none;
+  margin-left: -21px;
+}
+
+.catalog-products{
+  min-width: 220px;
+  max-width: 220px;
+  margin-right: 20px;
+}
+
+.catalog-filter{
+  min-width: 220px;
+  max-width: 220px;
+}
+
+.range{
+  font-weight: 400;
+}
+
+.range-scale{
+  min-width: 220px;
+  max-width: 220px;
+  height: 4px;
+  background-color: #242424;
+  border-radius: 2px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.range-bar{
+  position: relative;
+  top: 0;
+  left: 42px;
+  min-width: 136px;
+  max-width: 136px;
+  height: 4px;
+  background-color: #AF7842;
+}
+
+.range-toggle{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -8px;
+  min-width: 20px;
+  max-width: 20px;
+  height: 20px;
+  border: 2px solid #242424;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.toggle-min{
+  left: 0;
+}
+
+.range-inputs{
+  display: flex;
+}
+
+.catalog-filter-label{
+  display: flex;
+  max-width: 49px;
+  margin-right: 12px;
+}
+
+.range-input{
+  width: 27px;
+  border: none;
+  background-color: transparent;
+  padding: 0 4px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 22.4px;
+  text-align: center;
+}
+
+.range-input-max{
+  min-width: 34px;
+}
+
+.filter-group{
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.filter-title{
+  color: #000;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 22px;
+  padding: 0;
+}
+
+.filter-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-item{
+  line-height: 22.4px;
+  margin-bottom: 16px;
+}
+
+.filter-submit{
+  border: none;
+  cursor: pointer;
+}
+
+.sorting{
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 16px;
+}
+
+.select-product{
+  color: #242424;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: #fff;
+  padding: 9px 16px;
+  border: 2px solid #000;
+  min-width: 260px;
+  box-sizing: border-box;
+  appearance: none;
+  background-image: url(../img/logo-icon/mark-black-bot.svg);
+  background-repeat: no-repeat;
+  background-position: top 18px right 18px;
+  cursor: pointer;
+}
+
+.view-products-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-left: auto;
+}
+
+.view{
+  min-width: 56px;
+  min-height: 44px;
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+}
+
+.view-cards{
+  background-color: #000;
+}
+
+.product-cards-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  grid-template-rows: repeat(2, 401px);
+  gap: 20px
+}
+
+.product-card-item{
+  background-color: #fff;
+}
+
+.product-card-content{
+  padding: 16px;
+}
+
+.product-card-title{
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.product-card-price{
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #814B18;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.product-card-price-short{
+  margin-bottom: 16px;
+}
+
+.product-card-button{
+  min-width: 188px;
+  max-width: 188px;
+}
+
+.pagination{
+  background-color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  min-width: 700px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.pagination-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 420px;
+}
+
+.pagination-link{
+  margin-right: 8px;
+}
+
+.pagination-link-current{
+  background-color: #fff;
+  color: #242424;
+}
+
+.pagination-arrow{
+  min-width: 56px;
+  min-height: 44px;
+  box-sizing: border-box;
+  background-color: #000;
+  display: inline-block;
+  background-image: url(../img/logo-icon/mark-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pagination-link-prev{
+transform: rotate(180deg);
+background-color:  #595959;
+}
+
+.pagination-button{
+  margin-left: auto;
+  padding: 14px 20px;
+  border: none;
+  max-height: 44px;
+}
+/* */
