@@ -1,12 +1,15 @@
-$basic-black: #000000;
-$basic-white: #ffffff;
-$basic-grey-font: #444444;
-$basic-grey-bg: #f2f2f2;
-$basic-green-bg: #68b738;
+// ! Color
+$primary-color: #ffffff;
+$secondary-color: #000000;
+
+// ! Background (bg)
+$primary-bg: #f8f5f2;
+$secondary-bg: #292929;
+$third-bg: #353535;
+
 
 // ! Font
-$primary-font: "Oswald", "arial", sans-serif;
-$secondary-font: "Lato", "arial", sans-serif;
+$primary-font: "PT Sans Narrow", "arial", sans-serif;
 
 // ! Width viewport
 $tablet-widht: 768px;
