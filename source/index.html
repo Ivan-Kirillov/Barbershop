@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/styles.css"  >
+  <link rel="stylesheet" href="styles/styles.css">
   <title>Главная страница Барбершопа Бородинский</title>
 </head>
 <body>
-  <head class="header">
+  <header class="header">
     <div class="header__wrapper container">
-      <img src='images/logo-barbershop-desktop.svg' width="370" height="153" alt="Барбершоп Бородинский">
+      <picture>
+        <source @media="(min-widtn:1200px)" srcset="images/logo-barbershop-desktop.svg" type="images/svg+xml" width="370" height="153">
+        <img class="header__logo" src="images/logo-barbershop-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский">
+      </picture>
       <ul class="header__list ">
         <li class="header__item">
           <a class="header__link" href="#">
@@ -42,8 +45,13 @@
           </a>
         </li>
       </ul>
+      <button class="header__button">
+        <span class="visually-hidden">
+          Кнопка переключения меню
+        </span>
+      </button>
     </div>
-  </head>
+  </header>
   <main class="main">
     <div class="container">
       <h1 class="visually-hidden">
@@ -165,7 +173,7 @@
           <p class="promo__title">
             Новости и акции
           </p>
-          <button class="promo__button button">
+          <button class="promo__button button" type="button">
             Показать все
           </button>
         </div>
@@ -192,7 +200,7 @@
           <p class="reviews__title">
             Отзывы о нас
           </p>
-          <button class="reviews__button button">
+          <button class="reviews__button button" type="">
             Оставить свой
           </button>
         </div>
