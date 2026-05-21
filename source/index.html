@@ -3,53 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="preload" href="fonts/PT-Sans-Narrow/PTSans-Narrow.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PT-Sans-Narrow/PTSans-NarrowBold.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
   <title>Главная страница Барбершопа Бородинский</title>
 </head>
 <body>
-  <header class="header">
-    <div class="header__wrapper container">
-      <picture>
-        <source @media="(min-widtn:1200px)" srcset="images/logo-barbershop-desktop.svg" type="images/svg+xml" width="370" height="153">
-        <img class="header__logo" src="images/logo-barbershop-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский">
-      </picture>
-      <ul class="header__list ">
-        <li class="header__item">
-          <a class="header__link" href="#">
-            Главная
-          </a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">
-            Наши работы
-          </a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">
-            Записаться
-          </a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">
-            Контакты
-          </a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">
-            Html Academy
-          </a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">
-            Войти
-          </a>
-        </li>
-      </ul>
-      <button class="header__button">
-        <span class="visually-hidden">
-          Кнопка переключения меню
-        </span>
-      </button>
+  <header class="main-header">
+    <div class="main-header__wrapper container">
+      <a class="main-header__link" href="#">
+        <picture>
+          <source @media="(min-widtn:1200px)" srcset="images/logo-barbershop-desktop.svg" type="img/svg+xml" width="370" height="153">
+          <img class="main-header__logo" src="images/logo-barbershop-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский">
+        </picture>
+      </a>
+      <nav class="main-nav main-nav--closed">
+        <ul class="main-nav__list without-marker">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Наши работы
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Записаться
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Контакты
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Html Academy
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Войти
+            </a>
+          </li>
+        </ul>
+        <button class="main-nav__button" type="button">
+          <span class="visually-hidden">
+            Кнопка переключения меню
+          </span>
+        </button>
+      </nav>
     </div>
   </header>
   <main class="main">
@@ -62,7 +71,7 @@
           Основная информация о стрижке в Барбершопе Бородинский
         </h2>
         <div class="main-information__title ">
-          <div>
+          <div class="main-information__header">
             <p class="main-information__subtitle">
               Стрижка у нас это выгодно
             </p>

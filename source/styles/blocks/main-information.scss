@@ -1,0 +1,29 @@
+
+.main-information__header {
+  padding: 28px 0 14px 0;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-information__subtitle {
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 13px;
+  font-family: $primary-font;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.main-information__description {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.main-information__addition {
+  display: none;
+}

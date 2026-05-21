@@ -1,7 +1,7 @@
 /* GLOBAL */
 @import "./common/variables.scss";
 @import "./common/mixins.scss";
-@import "./common/fonts.scss";
+// @import "./common/fonts.scss";
 @import "./common/global.scss";
 @import "./common/visually-hidden.scss";
 
@@ -9,7 +9,9 @@
 /* BLOCKS */
 // ! Index
 @import './blocks/main.scss';
-@import './blocks/header.scss';
+@import './blocks/main-header.scss';
+@import './blocks/main-nav.scss';
+@import './blocks/main-information.scss';
 // @import "./blocks/header.scss";
 // @import "./blocks/hero.scss";
 // @import "./blocks/programs.scss";
