@@ -1,0 +1,45 @@
+.advantages {
+  margin-top: -1px;
+  background-color: #292929;
+  padding-bottom: 12px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item:not(:first-of-type) {
+  display: none;
+}
+
+.advantages__item {
+  margin: 0 auto;
+  padding-top: 165px;
+}
+
+// .advantages__item:first-of-type {
+//   width: 320px;
+//   height: auto;
+//   background-image: url('/source/icons/scrissors.svg');
+//   background-size: 95px 94px;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
+
+.advantages__item-title {
+  max-width: 260px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.advantages__item-description {
+  max-width: 250px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-size: 20px;
+  line-height: 27px;
+}

@@ -1,0 +1,27 @@
+.slider-division__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-right: -23px;
+}
+
+.slider-division__item:first-of-type {
+  margin-left: 5px;
+}
+
+.slider-division__item {
+  margin-right: 23px;
+}
+
+.slider-division__button {
+  display: flex;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border: 1px solid $primary-color;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
