@@ -1,0 +1,35 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 18px;
+  color: $secondary-color;
+}
+
+.reviews__title {
+  max-width: 280px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.reviews__button {
+  display: none;
+}
+
+.reviews__comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 280px;
+}
+
+.reviews__comment-description {
+  display: flex;
+  max-width: 280px;
+  text-align: center;
+}
+
+

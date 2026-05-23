@@ -1,7 +1,8 @@
 .advantages {
+  position: relative;
   margin-top: -1px;
   background-color: #292929;
-  padding-bottom: 12px;
+  padding-bottom: 47px;
 }
 
 .advantages__list {
@@ -18,14 +19,27 @@
   padding-top: 165px;
 }
 
-// .advantages__item:first-of-type {
-//   width: 320px;
-//   height: auto;
-//   background-image: url('/source/icons/scrissors.svg');
-//   background-size: 95px 94px;
-//   background-position: center;
-//   background-repeat: no-repeat;
-// }
+.advantages__item:first-of-type {
+  position: relative;
+  width: 320px;
+  height: 100%;
+  background-image: url('/images/scrissors.svg');
+  background-size: 95px 94px;
+  background-position: 50% 40px;
+  background-repeat: no-repeat;
+}
+
+.advantages__item:first-of-type::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $primary-bg;
+  width: 320px;
+  height: 34px;
+  margin-bottom: -55px;
+  clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 100% 0%, 100% 100%, 50% 100%);
+}
 
 .advantages__item-title {
   max-width: 260px;

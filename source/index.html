@@ -17,10 +17,10 @@
       <a class="main-header__link" href="#">
         <picture>
           <source @media="(min-widtn:1200px)" srcset="images/logo-barbershop-desktop.svg" type="img/svg+xml" width="370" height="153">
-          <img class="main-header__logo" src="images/logo-barbershop-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский">
+          <img class="main-header__logo" src="../images/logo-barbershop-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--opened">
         <ul class="main-nav__list without-marker">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">
@@ -52,12 +52,13 @@
               Войти
             </a>
           </li>
-        </ul>
-        <button class="main-nav__button" type="button">
+          <button class="main-nav__button" type="button">
           <span class="visually-hidden">
             Кнопка переключения меню
           </span>
         </button>
+        </ul>
+
       </nav>
     </div>
   </header>
@@ -197,107 +198,148 @@
         </div>
       </section>
       <section class="promo">
-        <h2 class="visually-hidden">
-          Актуальные новости о Барбершопе Бородинский
-        </h2>
-        <div class="promo__header">
+        <div class="promo__wrapper container">
+          <h2 class="visually-hidden">
+            Актуальные новости о Барбершопе Бородинский
+          </h2>
           <p class="promo__title">
             Новости и акции
           </p>
           <button class="promo__button button" type="button">
             Показать все
           </button>
-        </div>
-        <ul class="promo__list">
-          <li class="promo__item">
-            Нам наконец завезли Ягермайстер!
-            Теперь вы можете пропусить стаканчик во время стрижки.
-          </li>
-          <li class="promo__item">
-            В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды.
-            Спешите записаться!
-          </li>
-          <li class="promo__item">
-            Все дорожает, а наши стрижки нет! Как так?
-            Приходите, постригитесь и узнаете, в чем здесь подвох!
-          </li>
-        </ul>
-      </section>
-      <article class="reviews">
-        <h2 class="visually-hidden">
-          Отзывы клиентов о Барбершопе Бородинский
-        </h2>
-        <div class="reviews__header">
-          <p class="reviews__title">
-            Отзывы о нас
-          </p>
-          <button class="reviews__button button" type="">
-            Оставить свой
-          </button>
-        </div>
-        <div class="reviews__comment">
-          <button class="reviews__button">
-            <span class="visually-hidden">
-              Предыдущий комментарий
-            </span>
-          </button>
-          <img src="images/view-haircut-done.png" width="249" height="160" alt="Стрижка лысого мужчины с татуировками на теле и голове">
-          <p class="reviews__comment-description comment-description">
-            <cite class="comment-description__author">
-              Тревис Баркер
-            </cite>
-            <blockquote class="comment-description__quote">
-              Спасибо за лысину!
-              Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
-            </blockquote>
-          </p>
-          <button class="reviews__button">
-            <span class="visually-hidden">
-              Следующий комментарий
-            </span>
-          </button>
-        </div>
-        <div class="slider-division">
-          <ul class="slider-division__list">
-            <li class="slider-division__item">
-              <button class="slider-division__button slider-division__button--current">
-                <span class="visually-hidden">
-                  Просмотр первой картинки
+          <ul class="promo__list without-marker">
+            <li class="promo__item promo-item">
+              <div class="promo-item__title">
+                <span class="promo-item__number">
+                  29
                 </span>
-              </button>
+                <span class="promo-item__text">
+                  сент
+                </span>
+              </div>
+              <p class="promo__item-description">
+                Нам наконец завезли Ягермайстер!
+                Теперь вы можете пропусить стаканчик во время стрижки.
+              </p>
             </li>
-            <li class="slider-division__item">
-              <button class="slider-division__button">
-                <span class="visually-hidden">
-                  Просмотр второй картинки
+            <li class="promo__item">
+              <div class="promo-item__title">
+                <span class="promo-item__number">
+                  19
                 </span>
-              </button>
+                <span class="promo-item__text">
+                  сент
+                </span>
+              </div>
+              <p class="promo__item-description">
+                В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды.
+                Спешите записаться!
+              </p>
             </li>
-            <li class="slider-division__item">
-              <button class="slider-division__button">
-                <span class="visually-hidden">
-                  Просмотр третьей картинки
+            <li class="promo__item">
+              <div class="promo-item__title">
+                <span class="promo-item__number">
+                  9
                 </span>
-              </button>
+                <span class="promo-item__text">
+                  сент
+                </span>
+              </div>
+              <p class="promo__item-description">
+                Все дорожает, а наши стрижки нет! Как так?
+                Приходите, постригитесь и узнаете, в чем здесь подвох!
+              </p>
             </li>
           </ul>
         </div>
+      </section>
+      <article class="reviews">
+          <h2 class="visually-hidden">
+            Отзывы клиентов о Барбершопе Бородинский
+          </h2>
+          <div class="reviews__header">
+            <p class="reviews__title">
+              Отзывы о нас
+            </p>
+            <button class="reviews__button button" type="">
+              Оставить свой
+            </button>
+          </div>
+          <div class="reviews__comment">
+            <button class="reviews__button">
+              <span class="visually-hidden">
+                Предыдущий комментарий
+              </span>
+            </button>
+            <img src="images/view-haircut-done.png" width="249" height="160" alt="Стрижка лысого мужчины с татуировками на теле и голове">
+            <p class="reviews__comment-description">
+              <cite class="reviews__comment-author">
+                Тревис Баркер
+              </cite>
+              <blockquote class="reviews__comment-quote">
+                Спасибо за лысину!
+                Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+              </blockquote>
+            </p>
+            <button class="reviews__button">
+              <span class="visually-hidden">
+                Следующий комментарий
+              </span>
+            </button>
+          </div>
+          <div class="slider-division">
+            <ul class="slider-division__list without-marker">
+              <li class="slider-division__item">
+                <button class="slider-division__button slider-division__button--black slider-division__button--current">
+                  <span class="visually-hidden">
+                    Просмотр первой картинки
+                  </span>
+                </button>
+              </li>
+              <li class="slider-division__item">
+                <button class="slider-division__button slider-division__button--black">
+                  <span class="visually-hidden">
+                    Просмотр второй картинки
+                  </span>
+                </button>
+              </li>
+              <li class="slider-division__item">
+                <button class="slider-division__button slider-division__button--black">
+                  <span class="visually-hidden">
+                    Просмотр третьей картинки
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </div>
       </article>
     </div>
   </main>
-  <footer>
+  <footer class="main-footer">
     <div class="container">
       <section class="address">
-        <h2 class="visually-hidden">
-          Адрес Барбершопа Бородинский и контактная информация
-        </h2>
-        <p class="address__title">
-          Барбершоп Бородинский
-        </p>
-        <address class="address__description">
-          г. Санкт-Петербург, ул. Большая Конюшенная 19/8
-          Тел.: +7 (812) 555-66-66
-        </address>
+        <div class="address__wrapper">
+          <h2 class="visually-hidden">
+            Адрес Барбершопа Бородинский и контактная информация
+          </h2>
+          <p class="address__title">
+            Барбершоп Бородинский
+          </p>
+          <address>
+            <div class="address__place">
+              г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+            </div>
+            <div class="address__tel">
+              <span class="address__tel-title">
+                Тел.:
+              </span>
+              <span class="address__tel-number">
+                +7 (812) 555-66-66
+              </span>
+            </div>
+          </address>
+        </div>
       </section>
       <section class="social">
         <h2 class="visually-hidden">
@@ -306,23 +348,23 @@
         <p class="social__title">
           Давайте дружить!
         </p>
-        <ul class="social__list">
+        <ul class="social__list without-marker">
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link social__link--vk" href="#">
               <span class="visually-hidden">
                 Вконтакте
               </span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link social__link--youtube" href="#">
               <span class="visually-hidden">
                 Ютюб
               </span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link social__link--tg" href="#">
               <span class="visually-hidden">
                 Телеграм
               </span>

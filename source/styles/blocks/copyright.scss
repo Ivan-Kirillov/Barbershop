@@ -1,0 +1,29 @@
+.copyright {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 31px;
+}
+
+.copyright__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.copyright__link {
+  display: block;
+  min-width: 280px;
+  max-width: 280px;
+  min-height: 50px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  padding: 12px 0;
+  color: $primary-color;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #4a4a4a;
+}

@@ -17,11 +17,22 @@
 .slider-division__button {
   display: flex;
   padding: 0;
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   transform: rotate(45deg);
   border: 1px solid $primary-color;
   box-sizing: border-box;
   background-color: transparent;
 }
 
+.slider-division__button--current {
+  background-color: #ffffff;
+}
+
+.slider-division__button--black.slider-division__button--current {
+  background-color: #000000;
+}
+
+.slider-division__button--black {
+  border: 1px solid $secondary-color;
+}
