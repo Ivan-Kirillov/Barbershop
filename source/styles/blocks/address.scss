@@ -9,6 +9,7 @@
 .address::before {
   content: "";
   position: absolute;
+  margin-top: -1px;
   top: 0;
   left: 0;
   background-color: $primary-bg;
@@ -37,7 +38,7 @@
   min-width: 280px;
   max-width: 280px;
   min-height: 50px;
-  padding: 12px 0;
+  padding: 12px 10px;
   font-weight: 700;
   text-align: center;
   border: 1px solid #4a4a4a;

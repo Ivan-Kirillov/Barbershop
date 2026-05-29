@@ -1,43 +1,42 @@
 /* в этот файл добавляет скрипты*/
+// const navMain = document.querySelector('.main-nav');
+// const navToggle = document.querySelector('.main-nav__button');
 
-// let navMain = document.querySelector('.header');
-// let navToggle = document.querySelector('.header__menu-button');
-
-// navMain.classList.remove('header--nojs');
-
-// navToggle.addEventListener('click', function () {
-//   if (navMain.classList.contains('header--closed')) {
-//     navMain.classList.remove('header--closed')
-//     navMain.classList.add('header--opened');
+// navMain.classList.remove('main-nav--nojs');
+// function swap() {
+//   if (navMain.classList.contains('main-nav--closed')) {
+//     navMain.classList.remove('main-nav--closed');
+//     navMain.classList.add('main-nav--opened');
 //   } else {
-//     navMain.classList.add('header--closed');
-//     navMain.classList.remove('header--opened');
+//     navMain.classList.add('main-nav--closed');
+//     navMain.classList.remove('main-nav--opened');
 //   }
-// });
+// }
+// navToggle.addEventListener('click', swap ());
 // Переполнение
-/*
-function getTextNodesIn(elem, opt_fnFilter) {
-  var textNodes = [];
-  if (elem) {
-    for (var nodes = elem.childNodes, i = nodes.length; i--;) {
-      var node = nodes[i],
-        nodeType = node.nodeType;
-      if (nodeType == 3) {
-        if (!opt_fnFilter || opt_fnFilter(node, elem)) {
-          if (node.data.trim() !== '') {
-            textNodes.push(node.data.trim() !== '' ? node : '');
-          }
-        }
-      } else if (nodeType == 1 || nodeType == 9 || nodeType == 11) {
-        textNodes = textNodes.concat(getTextNodesIn(node, opt_fnFilter));
-      }
-    }
-  }
-  return textNodes;
-}
 
-getTextNodesIn(document.body).forEach((item) => { item.textContent = "У меня есть несколько клиентов, которые записались ко мне на стрижку, не успев даже зайти в салон." })
-*/
+// function getTextNodesIn(elem, opt_fnFilter) {
+//   var textNodes = [];
+//   if (elem) {
+//     for (var nodes = elem.childNodes, i = nodes.length; i--;) {
+//       var node = nodes[i],
+//         nodeType = node.nodeType;
+//       if (nodeType == 3) {
+//         if (!opt_fnFilter || opt_fnFilter(node, elem)) {
+//           if (node.data.trim() !== '') {
+//             textNodes.push(node.data.trim() !== '' ? node : '');
+//           }
+//         }
+//       } else if (nodeType == 1 || nodeType == 9 || nodeType == 11) {
+//         textNodes = textNodes.concat(getTextNodesIn(node, opt_fnFilter));
+//       }
+//     }
+//   }
+//   return textNodes;
+// }
+
+// getTextNodesIn(document.body).forEach((item) => { item.textContent = "У меня есть несколько клиентов, которые записались ко мне на стрижку, не успев даже зайти в салон." })
+
 
 // Недополнение
 /*
