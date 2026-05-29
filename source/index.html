@@ -16,8 +16,9 @@
     <div class="main-header__wrapper container">
       <a class="main-header__link" href="#">
         <picture>
-          <source @media="(min-widtn:1200px)" srcset="images/logo-barbershop-desktop.svg" type="img/svg+xml" width="370" height="153">
-          <img class="main-header__logo" src="/images/logo-barbershop-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский">
+          <source media="(min-width: 1200px)" srcset="images/logo-barbershop-desktop.svg" type="image/svg+xml" width="370" height="153">
+          <source media="(min-width: 768px)" srcset="images/logo-barbershop-tablet.svg" type="image/svg+xml" width="370" height="100">
+          <img class="main-header__logo" src="images/logo-barbershop-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский">
         </picture>
       </a>
       <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -48,7 +49,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__link main-nav__link--enter" href="#">
               Войти
             </a>
           </li>
@@ -74,7 +75,7 @@
         <div class="main-informations__title ">
           <div class="main-informations__header">
             <p class="main-informations__subtitle">
-              Стрижка у нас это выгодно
+              Стрижка у нас это выгодно!
             </p>
             <p class="main-informations__description">
               Мужская стрижка требует точного подхода. Обратимся к статистике:
@@ -86,9 +87,14 @@
             <h3 class="visually-hidden">
               Стоимость стрижки
             </h3>
-            <p class="main-information__title">
-              1500*
-            </p>
+            <div class="main-information__title">
+              <span>
+                1500
+              </span>
+              <p class="main-information__title-asterisk">
+                *
+              </p>
+            </div>
             <p class="main-information__description">
               рублей вложений
             </p>
@@ -98,7 +104,7 @@
               Время стрижки
             </h3>
             <p class="main-information__title">
-              7200
+              7 200
             </p>
             <p class="main-information__description">
               секунд времени мастера
@@ -109,7 +115,7 @@
               Количество стрижек за все время
             </h3>
             <p class="main-information__title">
-              90000
+              90 000
             </p>
             <p class="main-information__description">
               подстриженных волос
@@ -119,9 +125,14 @@
             <h3 class="visually-hidden">
               Количество лайков и комплиментов за сделанную стрижку
             </h3>
-            <p class="main-information__title">
-              500 000*
-            </p>
+            <div class="main-information__title">
+              <span>
+                500 000
+              </span>
+              <p class="main-information__title-asterisk">
+                *
+              </p>
+            </div>
             <p class="main-information__description">
               лайков и комплиментов
             </p>
@@ -272,16 +283,16 @@
                 Предыдущий комментарий
               </span>
             </button>
-            <img src="images/view-haircut-done.png" width="249" height="160" alt="Стрижка лысого мужчины с татуировками на теле и голове">
-            <p class="reviews__comment-description">
+            <img class="reviews__img" src="images/view-haircut-done__desktop.png" width="50" height="50" alt="Стрижка лысого мужчины с татуировками на теле и голове">
+            <div class="reviews__comment-description">
               <cite class="reviews__comment-author">
                 Тревис Баркер
               </cite>
-              <blockquote class="reviews__comment-quote">
+              <blockquote class="reviews__comment-blockquote">
                 Спасибо за лысину!
                 Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
               </blockquote>
-            </p>
+            </div>
             <button class="reviews__button">
               <span class="visually-hidden">
                 Следующий комментарий

@@ -1,17 +1,36 @@
 .main-header {
   background-color: $secondary-bg;
+        @media (min-width: $tablet-widht) {
+    background-color: $secondary-color;
+    background-image: url('/images/bg-tablet.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 768px 469px;
+    object-fit: cover;
+  }
 }
 
 .main-header__wrapper {
   display: flex;
   flex-direction: column;
   width: 320px;
+  max-width: 320px;
   margin: 0 auto;
+  @media (min-width: $tablet-widht) {
+    width: $tablet-widht;
+    max-width: $tablet-widht;
+  }
 }
 
 .main-header__link {
   padding-top: 29px;
   padding-bottom: 26px;
+  @media (min-width: $tablet-widht) {
+    padding: 0;
+    margin-top: 39px;
+    margin-bottom: 258px;
+    order: 2;
+  }
 }
 
 .main-header__logo {

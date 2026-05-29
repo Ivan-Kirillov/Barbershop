@@ -1,38 +1,7 @@
 
 
-.main-informations__header {
-  padding: 28px 0 14px 0;
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.main-informations__subtitle {
-  max-width: 200px;
-  margin: 0 auto;
-  margin-bottom: 13px;
-  font-family: $primary-font;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.main-informations__description {
-  max-width: 280px;
-  margin: 0 auto;
-  margin-bottom: 14px;
-  font-size: 20px;
-  line-height: 27px;
-}
-
-.main-informations__list{
-  margin: 0;
-  padding: 0;
-  padding-bottom: 40px;
-  background-color: #292929;
-}
-
 .main-information__item:last-of-type::after {
+  @media (max-width: 767px) {
   content: "* — приведённые данные ложь";
   position: absolute;
   max-width: 280px;
@@ -41,6 +10,7 @@
   font-size: 20px;
   line-height: 20px;
   color: rgba($color: $primary-color, $alpha: 0.3);
+  }
 }
 
 .main-information__item {
@@ -51,10 +21,21 @@
   justify-content: space-between;
   max-width: 320px;
   background-color: #353535;
+  @media (min-width: $tablet-widht) {
+    flex-direction: column;
+    width: 320px;
+    text-align: left;
+  }
 }
 
 .main-information__item:nth-of-type(even) {
   background-color: #4E4E4E;
+}
+
+.main-information__item:first-of-type, .main-information__item:last-of-type{
+    @media (min-width: $tablet-widht) {
+      background-color: #FFFFFF0D;
+  }
 }
 
 .main-information__title {
@@ -63,6 +44,24 @@
   font-size: 40px;
   line-height: 40px;
   font-weight: 700;
+      @media (min-width: $tablet-widht) {
+        display: flex;
+      padding-top: 25px;
+      padding-bottom: 5px;
+      max-width: 260px;
+      font-size: 72px;
+      line-height: 72px;
+  }
+}
+
+.main-information__title-asterisk {
+  @media (min-width: $tablet-widht) {
+    display: inline-block;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 5px;
+
+  }
 }
 
 .main-information__description {
@@ -74,6 +73,12 @@
   font-size: 18px;
   line-height: 18px;
   box-sizing: border-box;
+    @media (min-width: $tablet-widht) {
+      max-width: 200px;
+      padding-top: 2px;
+      padding-bottom: 30px;
+      text-align: left;
+  }
 }
 
 

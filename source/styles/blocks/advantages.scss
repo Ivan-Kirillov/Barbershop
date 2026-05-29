@@ -3,6 +3,9 @@
   margin-top: -1px;
   background-color: #292929;
   padding-bottom: 47px;
+  @media (min-width: $tablet-widht) {
+    background-color: #353535;
+  }
 }
 
 .advantages__list {
@@ -11,15 +14,25 @@
 }
 
 .advantages__item:not(:first-of-type) {
+  @media (max-width: 767px) {
   display: none;
+  }
 }
 
 .advantages__item {
   margin: 0 auto;
   padding-top: 165px;
+  @media (min-width: $tablet-widht) {
+    max-width: 570px;
+    padding-top: 43px;
+    padding-bottom: 37px;
+    padding-left: 127px;
+    text-align: left;
+  }
 }
 
 .advantages__item:first-of-type {
+  @media (max-width: 767px) {
   position: relative;
   width: 320px;
   height: 100%;
@@ -27,9 +40,18 @@
   background-size: 95px 94px;
   background-position: 50% 40px;
   background-repeat: no-repeat;
+  }
+  @media (min-width: $tablet-widht) {
+    background-image: url('/images/scrissors.svg');
+    background-size: 95px 94px;
+    background-position: 0% 10px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+  }
 }
 
 .advantages__item:first-of-type::after {
+  @media (max-width: 767px) {
   content: "";
   position: absolute;
   bottom: 0;
@@ -39,6 +61,7 @@
   height: 34px;
   margin-bottom: -55px;
   clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 100% 0%, 100% 100%, 50% 100%);
+  }
 }
 
 .advantages__item-title {
@@ -48,6 +71,11 @@
   font-size: 30px;
   line-height: 30px;
   font-weight: 700;
+    @media (min-width: $tablet-widht) {
+    max-width: 450px;
+    margin: 0;
+    padding-bottom: 6px;
+  }
 }
 
 .advantages__item-description {
@@ -56,4 +84,10 @@
   padding-bottom: 30px;
   font-size: 20px;
   line-height: 27px;
+  @media (min-width: $tablet-widht) {
+    max-width: 450px;
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 0;
+  }
 }
